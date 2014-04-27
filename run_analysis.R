@@ -51,6 +51,6 @@ train_sumdata = dcast(melt(train_data, id = c("subject","activity")), formula = 
 
 # Create .txt summaries of tidy data sets
 write.table(test_data, file="test_data.txt", sep=" ", append = FALSE)
-write.table(test_sumdata, file="test_data.txt", sep=" ", append = FALSE)
+write.table(test_sumdata, file="test_sumdata.txt", sep=" ", append = FALSE)
 write.table(train_data, file="train_data.txt", sep=" ", append = FALSE)
-write.table(train_sumdata, file="train_data.txt", sep=" ", append = FALSE)
+write.table(train_sumdata, file="train_sumdata.txt", sep=" ", append = FALSE)
